@@ -6,9 +6,13 @@ Chaîne d'intégration continue qui **intègre la sécurité au pipeline** (« s
 
 ---
 
-## 🎯 Contexte
+## 🎯 Contexte — *NovaPay*, une PME éditrice de logiciel
 
-Une équipe livre son application plusieurs fois par jour. La sécurité ne peut plus être un contrôle manuel en fin de cycle : elle doit être **automatisée dans le pipeline**. L'objectif est qu'un commit introduisant une vulnérabilité (code ou dépendance) soit **détecté et bloqué avant la mise en production**.
+**NovaPay** édite une application SaaS de paiements, livrée **plusieurs fois par jour**. La sécurité y est un contrôle manuel trimestriel — insuffisant à ce rythme. En 6 mois : une **dépendance vulnérable** (type Log4Shell) restée en production, un **secret en dur** poussé sur Git, et un **audit client raté** faute de pouvoir prouver que code et conteneurs sont scannés à chaque livraison (contrat suspendu).
+
+**Mission (DevSecOps) :** faire en sorte qu'un code ou une image vulnérable ne puisse **plus jamais atteindre la production — automatiquement, sans ralentir les développeurs**. C'est le principe du *shift-left* : la sécurité **dans** le pipeline, pas à côté.
+
+> Scénario détaillé, mapping problème → solution et valeur métier : **[`docs/CONTEXTE-ENTREPRISE.md`](docs/CONTEXTE-ENTREPRISE.md)**.
 
 ## 🔧 Le pipeline
 
