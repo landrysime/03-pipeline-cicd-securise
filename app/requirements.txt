@@ -1,0 +1,9 @@
+# ⚠️ VERSIONS VOLONTAIREMENT VULNÉRABLES (démo Trivy SCA).
+# Chacune porte des CVE connues que la chaîne CI/CD doit détecter.
+# La version corrigée (deps à jour) est décrite dans docs/GUIDE-LAB.md.
+
+Flask==0.12.2        # CVE-2018-1000656 (DoS)
+PyYAML==5.1          # CVE-2020-1747 (exécution de code via yaml.load)
+requests==2.19.1     # CVE-2018-18074 (fuite d'identifiants en redirection)
+Jinja2==2.10         # CVE-2019-10906, CVE-2020-28493
+Werkzeug==0.14.1     # CVE-2019-14806, CVE-2020-28724

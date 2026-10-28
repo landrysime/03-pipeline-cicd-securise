@@ -1,0 +1,7 @@
+workflow-aggregator
+git
+sonar
+pipeline-stage-view
+docker-workflow
+credentials-binding
+htmlpublisher
